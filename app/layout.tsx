@@ -24,6 +24,7 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Tan's Personal Website | Software Engineer",
   description: "Powered by Caffeine",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
