@@ -5,6 +5,7 @@ interface Experience {
   range: string;
   url: string;
   description: string[];
+  tech: string[];
 }
 
 const experiences: Experience[] = [
@@ -19,6 +20,7 @@ const experiences: Experience[] = [
       "Developed K6 scripts in JavaScript to perform load testing for Shoryuken.",
       "Utilizing LocalStack to mock the SQS service and WireMock to simulate endpoints.",
     ],
+    tech: ['Ruby', 'Go', 'Javascript','Wiremock','K6']
   },
 ];
 

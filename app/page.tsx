@@ -216,22 +216,24 @@ const Home = () => {
                         </li>
                       ))}
                     </ul>
+
+                    {exp.tech && exp.tech.length > 0 && (
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {exp.tech.map((techItem, techIdx) => (
+                          <span
+                            key={techIdx}
+                            className="rounded-md bg-teal-400/10 px-2 py-1 text-xs font-medium text-teal-300"
+                          >
+                            {techItem}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
-
-              {/* <div className="mt-8">
-                <a
-                  className="inline-flex items-center font-medium text-slate-200 hover:text-teal-300 transition-colors group"
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Full Resume
-                  <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-2" />
-                </a>
-              </div> */}
             </section>
+
 
             <section id="education" className="mb-16 scroll-mt-16 lg:scroll-mt-24">
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-6">
