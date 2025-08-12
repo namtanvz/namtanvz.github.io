@@ -41,15 +41,16 @@ const Me = () => {
           ))}
         </div>
 
-
-
         <div className="mt-16 pt-8 border-t border-slate-800">
-          <p className="text-xs text-slate-500 text-center">
-            This list changes as I discover new heroes and legends ✨
-          </p>
+          <div className="flex justify-center items-center gap-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            <p className="text-xs text-slate-500">
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </section>
 
   );

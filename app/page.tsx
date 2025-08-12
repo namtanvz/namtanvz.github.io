@@ -113,10 +113,6 @@ const Home = () => {
 
           <div className="px-6 lg:px-12 pt-6 pb-4">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-sm">
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-slate-400">Currently brewing coffee ☕</span>
-              </div>
 
               <div className="flex items-center space-x-4">
                 <a
