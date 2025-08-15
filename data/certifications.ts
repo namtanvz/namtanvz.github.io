@@ -95,6 +95,12 @@ const certifications = [
     date: "Feb 2023",
     url: "https://www.coursera.org/account/accomplishments/certificate/C6L87FAWSWEP",
   },
+     {
+    title: "Create ML Models with BigQuery ML",
+    issuer: "Google Cloud Skills Boost",
+    date: "Nov 2022",
+    url: "https://www.cloudskillsboost.google/public_profiles/999bf874-e0e8-490b-9051-77da83941bce/badges/2812226",
+  },
    {
     title: "Biomedical Image Analysis in Python",
     issuer: "DataCamp",

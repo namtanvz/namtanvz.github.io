@@ -23,6 +23,9 @@ const people: People[] = [
   {
     link: "https://acitronella.github.io",
   },
+  {
+    link: "https://doungnapat27.github.io/doungnapat_portfolio/",
+  },
 
 ];
 

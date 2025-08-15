@@ -266,7 +266,7 @@ const Home = () => {
                           href={edu.advisorUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-teal-300 hover:text-teal-200 transition-colors"
+                          className="text-teal-300 hover:text-teal-200 transition-colors font-bold"
                         >
                           {edu.advisor}
                         </a>
@@ -408,7 +408,7 @@ const Home = () => {
               </button>
             </section>
 
-            <section id="certifications" className="mb-24 scroll-mt-16 lg:scroll-mt-24">
+            <section id="certifications" className="lg:mb-68 scroll-mt-16 lg:scroll-mt-24">
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-4">
                 Certifications
               </h2>

@@ -45,7 +45,7 @@ const Me = () => {
           <div className="flex justify-center items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
             <p className="text-xs text-slate-500">
-              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Last updated: August 16, 2025
             </p>
           </div>
         </div>
