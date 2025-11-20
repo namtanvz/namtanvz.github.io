@@ -15,7 +15,7 @@ const people: People[] = [
     link: "https://portfolio-kontawat.vercel.app",
   },
   {
-    link: "https://yamchote-ppt.github.io/phaphontee-yamchote",
+    link: "https://yamchote-ppt.github.io",
   },
   {
     link: "https://www.unfoldthedice.co",
