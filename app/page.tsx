@@ -8,12 +8,13 @@ import experiences from '@/data/experiences';
 import education from '@/data/education';
 import skills from '@/data/skills';
 import certifications from '@/data/certifications';
+import research from '@/data/research';
 
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('about');
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const sections = ['about', 'experience', 'education', 'projects', 'skills', 'certifications'];
+  const sections = ['about', 'experience', 'education', 'research' ,'projects', 'skills', 'certifications'];
 
   const allCategories = [
     { title: 'Languages', items: skills.programmingLanguages },
@@ -298,6 +299,67 @@ const Home = () => {
                 ))}
               </div>
             </section>
+
+            <section id="research" className="mb-16 scroll-mt-16 lg:scroll-mt-24">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-4">
+                Research & Publications
+              </h2>
+              <div className="space-y-2">
+                {research.map((paper, idx) => (
+                  <div
+                    key={idx}
+                    className="group relative -mx-4 px-4 py-5"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                      <h3 className="font-semibold leading-snug text-slate-200">
+                        {paper.title}
+                      </h3>
+                      <span className="text-xs text-slate-500 font-mono whitespace-nowrap sm:pl-4">
+                        {paper.date}
+                      </span>
+                    </div>
+
+                    <p className="mt-2 text-sm text-slate-400 italic">{paper.authors}</p>
+
+                    {paper.description && (
+                      <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                        {paper.description}
+                      </p>
+                    )}
+
+                    <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+                      {paper.tags && paper.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {paper.tags.map((tag, tagIdx) => (
+                            <span
+                              key={tagIdx}
+                              className="rounded-md bg-teal-400/10 px-2 py-1 text-xs font-medium text-teal-300"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {paper.url && (
+                        <a
+                          href={paper.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-xs font-medium text-slate-400 hover:text-teal-300 transition-colors ml-auto"
+                        >
+                          View Paper
+                          <ExternalLink className="w-3.5 h-3.5 ml-1" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+
+
 
             <section id="projects" className="mb-16 scroll-mt-16 lg:scroll-mt-24">
               <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 mb-4">
